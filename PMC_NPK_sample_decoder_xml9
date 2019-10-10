@@ -1,0 +1,5557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaData>
+  <PacketType Name="SAMPLE_PMC">
+    <SubTypeMask StartBit="0" Length="16"/>
+    <Size>80</Size>
+    <Fields>
+      <Field Name="SAMPLE_ID">
+        <StartBit>0</StartBit>
+        <Length>15</Length>
+      </Field>
+      <Field Name="SAMPLE_ENABLE">
+        <StartBit>15</StartBit>
+        <Length>1</Length>
+      </Field>
+      <Field Name="SAMPLE_DATA">
+        <StartBit>16</StartBit>
+        <Length>64</Length>
+      </Field>
+    </Fields>
+    <PacketType Name="START_TIMESTAMP">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="0000000000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_UPSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_DOWNSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_UPSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_DOWNSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_UPSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_DOWNSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_UPSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_DOWNSTREAM_BANDWIDTH">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TRANSACTIONS">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNNAON_REQ_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_NDSPS_PG_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_NDSPS_IDLE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_HDA_PG_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_LPAL_PG_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_OCP_XTAL_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_VNN_REQ_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_SRAM_LDO_BYP_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_NUM_SRAM_PG_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_NUM_SRAM_RET_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_NUM_HP_SRAM_ON">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_NUM_LP_SRAM_ON">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_WIFI_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_BLUETOOTH_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_GNSS_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_MFUART_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_TX_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000011010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_RX_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000011011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_PLL_ACTIVE_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1000000000011100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="P2SB_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SPI_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD4_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD3_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD2_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD1_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="EXI_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVRC_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVNN_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CUNIT_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="FUSE_CTRL_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPC_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SMB_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_IP_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000011101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000011110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000011111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_POWER_GATED_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_IDLE_STATUS_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_IDLE_STATUS_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_IDLE_STATUS_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_IDLE_STATUS_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SBR_IOSS_FABRIC_IDLE_STATUS_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD0_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000100111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_MAX_PWR_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000101000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_VNN_REQ_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000101011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD2_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000110010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_LP_OCP_FREQ_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000110011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_PRIM_CLKREQ_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000110100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000110111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNNAON_REQ_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000111000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_SRAM_LDO_BYP_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000111001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_MAX_PWR_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000111010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_ACTIVE_MISC_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1001100000111011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="P2SB_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SPI_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD4_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD3_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD2_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD1_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="EXI_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVRC_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVNN_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CUNIT_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="FUSE_CTRL_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPC_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SMB_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_IP_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000011101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000011110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000011111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_POWER_GATED_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_IDLE_STATUS_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_IDLE_STATUS_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_IDLE_STATUS_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_IDLE_STATUS_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SBR_IOSS_FABRIC_IDLE_STATUS_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD0_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000100111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_MAX_PWR_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000101000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_VNN_REQ_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000101011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD2_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000110010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_LP_OCP_FREQ_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000110011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_PRIM_CLKREQ_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000110100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000110111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNNAON_REQ_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000111000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_SRAM_LDO_BYP_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000111001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_MAX_PWR_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000111010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_ACTIVE_MISC_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010000000111011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_X2_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIESTS1_NXTTXSEQNUM">
+          <StartBit>16</StartBit>
+          <Length>12</Length>
+        </Field>
+        <Field Name="PCIESTS1_LANESTAT">
+          <StartBit>28</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_DLLRETRY">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_REPLAYNUM">
+          <StartBit>33</StartBit>
+          <Length>2</Length>
+        </Field>
+        <Field Name="PCIESTS1_LNKSTAT">
+          <StartBit>35</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_RSVD">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_LTSMSTATE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_X2_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIESTS1_NXTTXSEQNUM">
+          <StartBit>16</StartBit>
+          <Length>12</Length>
+        </Field>
+        <Field Name="PCIESTS1_LANESTAT">
+          <StartBit>28</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_DLLRETRY">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_REPLAYNUM">
+          <StartBit>33</StartBit>
+          <Length>2</Length>
+        </Field>
+        <Field Name="PCIESTS1_LNKSTAT">
+          <StartBit>35</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_RSVD">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_LTSMSTATE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_X4_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIESTS1_NXTTXSEQNUM">
+          <StartBit>16</StartBit>
+          <Length>12</Length>
+        </Field>
+        <Field Name="PCIESTS1_LANESTAT">
+          <StartBit>28</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_DLLRETRY">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_REPLAYNUM">
+          <StartBit>33</StartBit>
+          <Length>2</Length>
+        </Field>
+        <Field Name="PCIESTS1_LNKSTAT">
+          <StartBit>35</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_RSVD">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_LTSMSTATE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_X4_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIESTS1_NXTTXSEQNUM">
+          <StartBit>16</StartBit>
+          <Length>12</Length>
+        </Field>
+        <Field Name="PCIESTS1_LANESTAT">
+          <StartBit>28</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_DLLRETRY">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_REPLAYNUM">
+          <StartBit>33</StartBit>
+          <Length>2</Length>
+        </Field>
+        <Field Name="PCIESTS1_LNKSTAT">
+          <StartBit>35</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_RSVD">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_LTSMSTATE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE2_X4_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIESTS1_NXTTXSEQNUM">
+          <StartBit>16</StartBit>
+          <Length>12</Length>
+        </Field>
+        <Field Name="PCIESTS1_LANESTAT">
+          <StartBit>28</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_DLLRETRY">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_REPLAYNUM">
+          <StartBit>33</StartBit>
+          <Length>2</Length>
+        </Field>
+        <Field Name="PCIESTS1_LNKSTAT">
+          <StartBit>35</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_RSVD">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_LTSMSTATE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE3_X4_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIESTS1_NXTTXSEQNUM">
+          <StartBit>16</StartBit>
+          <Length>12</Length>
+        </Field>
+        <Field Name="PCIESTS1_LANESTAT">
+          <StartBit>28</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_DLLRETRY">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_REPLAYNUM">
+          <StartBit>33</StartBit>
+          <Length>2</Length>
+        </Field>
+        <Field Name="PCIESTS1_LNKSTAT">
+          <StartBit>35</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PCIESTS1_RSVD">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="PCIESTS1_LTSMSTATE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_PORT0_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PxSSTS0_DET">
+          <StartBit>16</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PxSSTS0_SPD">
+          <StartBit>20</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PxSSTS0_IPM">
+          <StartBit>24</StartBit>
+          <Length>4</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_PORT1_LINK_STATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1010100000010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PxSSTS1_DET">
+          <StartBit>16</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PxSSTS1_SPD">
+          <StartBit>20</StartBit>
+          <Length>4</Length>
+        </Field>
+        <Field Name="PxSSTS1_IPM">
+          <StartBit>24</StartBit>
+          <Length>4</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_IDLE_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_IDLE_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_IDLE_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_IDLE_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SBR_IOSS_FABRIC_IDLE_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000100001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000100010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000000100011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_P1_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_P0_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PWM_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P3_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P2_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P1_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P0_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_D3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE0_P1_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001100111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE0_P0_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PWM_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P3_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P2_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P1_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P0_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001101111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001110000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_SATA_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001110001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_D0I3_STATUS_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000001110010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="P2SB_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SPI_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD4_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD3_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD2_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD1_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="EXI_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVRC_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVNN_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CUNIT_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="FUSE_CTRL_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPC_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SMB_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_IP_POWER_GATED_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD0_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_MAX_PWR_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010100001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_VNN_REQ_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010100100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD2_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010101011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_LP_OCP_FREQ_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010101100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_PRIM_CLKREQ_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010101101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010110000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNNAON_REQ_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010110001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_SRAM_LDO_BYP_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010110010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_MAX_PWR_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010110011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_ACTIVE_MISC1_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000010110100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_IOAPIC_INTR_PEND_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_IRQ08_ASSERT_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_NMI_ACTIVE_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_ERR_MSG_PEND_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_INIT_MSG_PEND_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_HPET_MSI_PEND_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_KUHRDRST_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_KUFULLRST_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_RESTORE_CMPL_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_DEEPPM_P1_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_DEEPPM_P0_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P3_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P2_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P1_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P0_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_VS0_RUN_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_VS1_RUN_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SPI_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SMB_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPC_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_ACTIVE_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_ACTIVE_REQ_MISC2_FW_RESIDENCY">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011000011011111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_IDLE_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_IDLE_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_IDLE_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_IDLE_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SBR_IOSS_FABRIC_IDLE_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF1_FABRIC_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF2_FABRIC_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000100001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF3_FABRIC_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000100010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PSF4_FABRIC_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100000100011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_P1_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_P0_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PWM_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P3_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P2_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P1_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_P0_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_D3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE0_P1_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001100111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE0_P0_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PWM_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P3_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P2_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P1_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_PCIE1_P0_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001101111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001110000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD_SATA_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001110001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_D0I3_STATUS_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100001110010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPSS_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="P2SB_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="GMM_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XDCI_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="USB_XHCI_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SPI_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD4_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD3_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD2_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVSPGD1_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="EXI_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVRC_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="NPKVNN_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CUNIT_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="FUSE_CTRL_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPC_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SMB_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_IP_POWER_GATED_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD0_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010100000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC_MAX_PWR_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010100001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_VNN_REQ_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010100100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="RSVD2_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010101011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AUDIO_LP_OCP_FREQ_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010101100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_PRIM_CLKREQ_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010101101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010110000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNNAON_REQ_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010110001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_SRAM_LDO_BYP_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010110010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SCC2_MAX_PWR_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010110011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_ACTIVE_MISC1_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100010110100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_IOAPIC_INTR_PEND_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_IRQ08_ASSERT_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_NMI_ACTIVE_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_ERR_MSG_PEND_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_INIT_MSG_PEND_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_HPET_MSI_PEND_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_KUHRDRST_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ITSS_KUFULLRST_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_RESTORE_CMPL_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_DEEPPM_P1_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE0_DEEPPM_P0_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P3_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P2_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P1_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PCIE1_DEEPPM_P0_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_VS0_RUN_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SATA_VS1_RUN_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SPI_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011010110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PRTC_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011010111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SMB_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="LPC_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CNV_ACTIVE_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="CSE_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="AVS_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_VNN_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="ISH_ACTIVE_REQ_MISC2_FW_COUNTER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1011100011011111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DATA">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SOC_S0IX_TOTAL_OCC">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1100000000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="OCCURRENCE">
+          <StartBit>16</StartBit>
+          <Length>32</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SOC_S0IX_SHALLOW_OCC">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1100000000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="OCCURRENCE">
+          <StartBit>16</StartBit>
+          <Length>32</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SOC_S0IX_DEEP_OCC">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1100000000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="OCCURRENCE">
+          <StartBit>16</StartBit>
+          <Length>32</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SOC_S0IX_TOTAL_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1100100000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SOC_S0IX_SHALLOW_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1100100000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="SOC_S0IX_DEEP_RES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1100100000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="RESIDENCY">
+          <StartBit>16</StartBit>
+          <Length>64</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PMC_POWER_GATE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1101100000011000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IP_PG_FSM_OFF_LPSS">
+          <StartBit>16</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_SCC">
+          <StartBit>17</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_P2SB">
+          <StartBit>18</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_SCC2">
+          <StartBit>19</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_GMM">
+          <StartBit>20</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_PCIE0">
+          <StartBit>21</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_USB_XDCI">
+          <StartBit>22</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_USB_XHCI">
+          <StartBit>23</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_CSE">
+          <StartBit>24</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_SPI">
+          <StartBit>25</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_AVSPGD4">
+          <StartBit>26</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_AVSPGD3">
+          <StartBit>27</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_AVSPGD2">
+          <StartBit>28</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_AVSPGD1">
+          <StartBit>29</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_ISH">
+          <StartBit>30</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_EXI">
+          <StartBit>31</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_NPKVRC">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_NPKVNN">
+          <StartBit>33</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_CUNIT">
+          <StartBit>34</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_FUSE_CTRL">
+          <StartBit>35</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_PCIE1">
+          <StartBit>36</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_CNV">
+          <StartBit>37</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_LPC">
+          <StartBit>38</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_SATA">
+          <StartBit>39</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_SMB">
+          <StartBit>40</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_PRTC">
+          <StartBit>41</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="IP_PG_FSM_OFF_RSVD">
+          <StartBit>42</StartBit>
+          <Length>6</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PMC_D3_STATES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1101100000011001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="D3_STS_CSE">
+          <StartBit>16</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_SCC2">
+          <StartBit>17</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_GMM">
+          <StartBit>18</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_USB_XDCI">
+          <StartBit>19</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_USB_XHCI">
+          <StartBit>20</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_ISH">
+          <StartBit>21</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_AVS">
+          <StartBit>22</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PCIE0_P1">
+          <StartBit>23</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PCIE0_P0">
+          <StartBit>24</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_LPSS">
+          <StartBit>25</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_SCC">
+          <StartBit>26</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PWM">
+          <StartBit>27</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PCIE1_P3">
+          <StartBit>28</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PCIE1_P2">
+          <StartBit>29</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PCIE1_P1">
+          <StartBit>30</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PCIE1_P0">
+          <StartBit>31</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_CNV">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_SATA">
+          <StartBit>33</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_PRTC">
+          <StartBit>34</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D3_STS_RSVD">
+          <StartBit>35</StartBit>
+          <Length>13</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="PMC_D0I3_STATES">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1101100000011010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="D0I3_STS_CSE">
+          <StartBit>16</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_SCC2">
+          <StartBit>17</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_GMM">
+          <StartBit>18</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_USB_XDCI">
+          <StartBit>19</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_USB_XHCI">
+          <StartBit>20</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_ISH">
+          <StartBit>21</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_AVS">
+          <StartBit>22</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_PCIE0_P1">
+          <StartBit>23</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_PCIE0_P0">
+          <StartBit>24</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_LPSS">
+          <StartBit>25</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_SCC">
+          <StartBit>26</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_PWM">
+          <StartBit>27</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_PCIE1_P3">
+          <StartBit>28</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_PCIE1_P2">
+          <StartBit>29</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_PCIE1_P1">
+          <StartBit>30</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_PCIE1_P0">
+          <StartBit>31</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_CNV">
+          <StartBit>32</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD_SATA">
+          <StartBit>33</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_PRTC">
+          <StartBit>34</StartBit>
+          <Length>1</Length>
+        </Field>
+        <Field Name="D0I3_STS_RSVD">
+          <StartBit>35</StartBit>
+          <Length>13</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASON_GPIO">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="GPIO_0_3">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_4_7">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_8_11">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_12_15">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_16_19">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_20_23">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_24_27">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_28_31">
+          <StartBit>72</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASON_TIMER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TNTE_WAKE">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="ITSS_IRQ_8">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMI_SWSMI_TMR">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMI_TCO_TMR">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMI_PERIODIC_TMR">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASON_VNN_REQ">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="CSE_VNN_REQ">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="AVS_VNN_REQ">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="ISH_VNN_REQ">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CNV_VNN_REQ">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LPC_VNN_REQ">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMB_VNN_REQ">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="PRTC_VNN_REQ">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASON_LOWPOWER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="ISH_ACTIVE">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CNV_ACTIVE">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMB_WAKE">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="USB_PME_WAKEUP">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="AVS_PME_WAKEUP">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SATA_PME_WAKEUP">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASON_EXTERNAL">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIE_WAKEUP">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="HPD_WAKE">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CSE_WAKE">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SCI_WAKEUP">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IOAPIC_WAKEUP">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="UART_WAKEUP">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SDIO_WAKEUP">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASON_MISC">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DFX_WAKEUP">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SVID_ALERT_WAKEUP">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GLOBAL_ERROR_WAKEUP">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LOW_BATTERY_WAKEUP">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="POWER_BUTTON_WAKEUP">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="RESET_BUTTON_WAKEUP">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_IPS_D3_D0I3">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_D3_PWM">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_D3_XHCI">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_D3_XDCI">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_D3_GMM">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_D3_SATA">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_IPS_PG">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000000111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_PG_LPSS">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_SCC">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_USB_XDCI">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_USB_XHCI">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_CSE">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_GMM">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_NPK">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_MISC_IPS_PG">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_PG_AVS">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_PCIE">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_CNV">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_LPC">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_SATA">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_SMB">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_PRTC">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_PG_MISC">
+          <StartBit>72</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_IPS_VNN_REQ">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_VNNREQ_CSE">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_VNNREQ_AVS">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_VNNREQ_ISH">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_VNNREQ_PRTC">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_VNNREQ_SMB">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_VNNREQ_LPC">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_VNNREQ_CNV">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_FABRICS_IDLE">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_FABRIC_SBR_IOSS">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_FABRIC_PSF1">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_FABRIC_PSF2">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_FABRIC_PSF3">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_FABRIC_PSF4">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_IPS_CLOCKS">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_CLOCK_ITSS">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_RTC">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_USB">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_ISH">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_EXI">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_AVS">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_PUNIT_PMC">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_MISC">
+          <StartBit>72</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_IPS_CLOCKS2">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IPS_CLOCK_MODPHY1">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_FIA">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_LPC">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_SATA">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_SMB">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IPS_CLOCK_PRTC">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_BLOCKING_ITSS_ACPI_PENDING_EVENTS">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001101"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="HPET_MSI_PEND">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="INIT_MSG_PEND">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="ERR_MSG_PEND">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="NMI_ACTIVE">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IRQ08_ASSERT">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IOAPIC_INTR_PEND">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="ACPI_MSG_PEND">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_POINTS">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001110"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="IP_ST_CHK">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LTR_TNTE_VOA_CHK">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="FAB_IDLE_CHK">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="WAKE_EVENTS_PENDING">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="VNN_OFF_PREP_NACK">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="FINAL_PG_IDLE_CHK">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CLK_ACK_CHK">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="MISC_CHK">
+          <StartBit>72</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASON_GPIO">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000001111"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="GPIO_0_3">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_4_7">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_8_11">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_12_15">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_16_19">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_20_23">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_24_27">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GPIO_28_31">
+          <StartBit>72</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASON_TIMER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000010000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="TNTE_WAKE">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="ITSS_IRQ_8">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMI_SWSMI_TMR">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMI_TCO_TMR">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMI_PERIODIC_TMR">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASON_VNN_REQ">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000010001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="CSE_VNN_REQ">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="AVS_VNN_REQ">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="ISH_VNN_REQ">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CNV_VNN_REQ">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LPC_VNN_REQ">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMB_VNN_REQ">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="PRTC_VNN_REQ">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASON_LOWPOWER">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000010010"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="ISH_ACTIVE">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CNV_ACTIVE">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SMB_WAKE">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="USB_PME_WAKEUP">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="AVS_PME_WAKEUP">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SATA_PME_WAKEUP">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASON_EXTERNAL">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000010011"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="PCIE_WAKEUP">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="HPD_WAKE">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="CSE_WAKE">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SCI_WAKEUP">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="IOAPIC_WAKEUP">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="UART_WAKEUP">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SDIO_WAKEUP">
+          <StartBit>64</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASON_MISC">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110000000010100"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="DFX_WAKEUP">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="SVID_ALERT_WAKEUP">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="GLOBAL_ERROR_WAKEUP">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LOW_BATTERY_WAKEUP">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="POWER_BUTTON_WAKEUP">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="RESET_BUTTON_WAKEUP">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_EXIT_WAKE_REASONS">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110100000000000"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="GPIO_EVENTS">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="TIMER_EVENTS">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="VNN_REQ_EVENTS">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LOWPOWER_IP_EVENTS">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="EXT_EVENTS">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="MISC_EVENTS">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+    <PacketType Name="S0IX_ABORT_WAKE_REASONS">
+      <MaskBundle>
+        <MaskField StartBit="0" Length="16" MaskValue="1110100000000001"/>
+      </MaskBundle>
+      <Size>80</Size>
+      <Fields>
+        <Field Name="GPIO_EVENTS">
+          <StartBit>16</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="TIMER_EVENTS">
+          <StartBit>24</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="VNN_REQ_EVENTS">
+          <StartBit>32</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="LOWPOWER_IP_EVENTS">
+          <StartBit>40</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="EXT_EVENTS">
+          <StartBit>48</StartBit>
+          <Length>8</Length>
+        </Field>
+        <Field Name="MISC_EVENTS">
+          <StartBit>56</StartBit>
+          <Length>8</Length>
+        </Field>
+      </Fields>
+    </PacketType>
+  </PacketType>
+</MetaData>
